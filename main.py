@@ -1,6 +1,6 @@
-def lesson_4(*args):
-    slovo = {}
-    for key , value in args:
-        slovo[key] = value
-    return slovo
-print(lesson_4(*[('Захар' , 15) , ('Женя' , 16) , ('Даша' , 17)]))
+def combine_dicts(*args):
+    dictionary = {}
+    for finish in args:
+        dictionary.update(finish)
+    return dictionary
+print(combine_dicts({'Start' : '15' , 'finish' : 'red' , 'color' : 'yello'}))
